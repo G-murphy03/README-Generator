@@ -17,48 +17,49 @@ const questions = [
 
 // TODO: Create a function to write README file
 const writeToFile = ({github, email, title, description, license, dependencies, tests, userInfo, userContribute}) => {
-    `# ${title}
-    ![Github license] ${license}
+    return `
+# ${title}
+![Github license] ${license}
 
-    ## Description
-    ${description}
+## Description
+${description}
 
-    ## Table of Contents
-    * [Installation] (#installation)
-    * [Usage] (#usage)
-    * [License] (#license)
-    * [Contributing] (#contributing)
-    * [Tests](#tests)
-    * [Questions] (#questions)
+## Table of Contents
+* [Installation] (#installation)
+* [Usage] (#usage)
+* [License] (#license)
+* [Contributing] (#contributing)
+* [Tests](#tests)
+* [Questions] (#questions)
     
-    ## Installation
-    To install necessary dependencies, run the following command:
+## Installation
+To install necessary dependencies, run the following command:
 
-    ------------------------
+------------------------
 
-    ${dependencies}
+${dependencies}
 
-    ------------------------
+------------------------
 
-    ## Usage
-    ${userInfo}
+## Usage
+${userInfo}
 
-    ## License
-    This project is licensed under the ${license} license.    
+## License
+This project is licensed under the ${license} license.    
 
-    ## Contributing
-    ${userContribute}
+## Contributing
+${userContribute}
 
-    ## Tests
-    To run tests, run the following command:
-    ------------------------
+## Tests
+To run tests, run the following command:
+------------------------
 
-    ${tests}
+${tests}
 
-    ------------------------
+------------------------
 
-    ## Questions
-    If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at ${github}(https://github.com/${github}/).
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at ${github}(https://github.com/${github}/).
     `
 }
 
