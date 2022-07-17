@@ -110,7 +110,7 @@ function init() {
     .then((answers) => {
         const readmeContent = writeToFile(answers);
 
-        fs.writeFile('./assets/sample-readme/ReadME.md', readmeContent, (err) => 
+        fs.writeFile('./sample-readme/ReadME.md', readmeContent, (err) => 
             err ? console.log(err) : console.log('Successfully created ReadME file!')
         );
     });
