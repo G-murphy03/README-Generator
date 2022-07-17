@@ -19,27 +19,23 @@ const questions = [
 const writeToFile = ({github, email, title, description, license, dependencies, tests, userInfo, userContribute}) => {
     return `
 # ${title}
-![Github license] ${license}
+![badge](https://img.shields.io/badge/license-${license}-brightgreen)<br/>
 
 ## Description
 ${description}
 
 ## Table of Contents
-* [Installation] (#installation)
-* [Usage] (#usage)
-* [License] (#license)
-* [Contributing] (#contributing)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
 * [Tests](#tests)
-* [Questions] (#questions)
+* [Questions](#questions)
     
 ## Installation
 To install necessary dependencies, run the following command:
 
-------------------------
-
 ${dependencies}
-
-------------------------
 
 ## Usage
 ${userInfo}
@@ -52,14 +48,11 @@ ${userContribute}
 
 ## Tests
 To run tests, run the following command:
-------------------------
 
 ${tests}
 
-------------------------
-
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at ${github}(https://github.com/${github}/).
+If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at ${github} (https://github.com/${github}/).
     `
 }
 
